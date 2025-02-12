@@ -60,6 +60,14 @@ int written = fwrite(list, sizeof(list[0]), n, stream);
 
 `fwrite` gibt die Anzahl an gelungen beschreibungen zurück.
 
+## Put
+
+Schreibt einen String an das Ende der Datei
+
+```
+int written = fputs("Hello World", stream);
+```
+
 # Aufgabe
 
 Lese ein gemischtes Array ein und sortiere dies.

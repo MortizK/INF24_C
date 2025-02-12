@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-Die Argumente werden als String eingelesen und müssen noch geparst werden. Hierzu gibt es schon funktionen:
+Die Argumente werden als String eingelesen und müssen noch geparst werden. Hierzu gibt es schon funktionen in `<stdlib.h>`:
 
 1. atoi() für string to intiger
 2. atol() für string to long
@@ -39,7 +39,7 @@ int calcSum(int count, ...) {
     va_start(args, count);  // Deklarieren von den Argumenten
 
     // Zugriff auf das erste Element
-    int value = va_arg(args, 0);
+    int value = va_arg(args, int);
 
     // Beenden der Argumente
     va_end(args);
